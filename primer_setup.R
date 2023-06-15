@@ -1,4 +1,9 @@
-## Primer 6 set up 
+## Primer 6 set up
+
+# Load these packages 
+library(vegan)
+library(tidyverse)
+ 
 ## create distance matrix from your OTU table 
 set.seed(999)
 bray.dist.matrix <- avgdist(OTU_TABLE_WIDE, sample = (# you want to rarefy to), meanfun = median,transf= sqrt, iterations = 100, round.out = T)
